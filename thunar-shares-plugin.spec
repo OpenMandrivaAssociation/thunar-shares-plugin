@@ -1,13 +1,15 @@
 Summary:	Samba support for Thunar filemanager
-Name:		thunar-shares
-Version:	0.16
-Release:	%mkrel 2
+Name:		thunar-shares-plugin
+Version:	0.2.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-Url:		http://code.google.com/p/thunar-shares/
-Source0:	http://thunar-shares.googlecode.com/files/%{name}-%{version}.tar.bz2
+Url:		http://goodies.xfce.org/projects/thunar-plugins/%{name}
+Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:	thunar-devel
 Requires:	samba-common
+Obsoletes:	thunar-shares < 0.2.0
+Provides:	thunar-shares
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -35,7 +37,5 @@ A Thunar file manager extension to share files using Samba.
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc AUTHORS README ChangeLog NEWS TODO
-%dir %{_datadir}/thunar-shares
-%{_libdir}/thunarx-1/thunar-shares.la
-%{_libdir}/thunarx-1/thunar-shares.so
-%{_datadir}/thunar-shares/*.xml
+%{_libdir}/thunarx-1/thunar-shares-plugin.la
+%{_libdir}/thunarx-1/thunar-shares-plugin.so
