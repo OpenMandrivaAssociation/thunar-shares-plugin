@@ -1,11 +1,11 @@
 Summary:	Samba support for Thunar filemanager
 Name:		thunar-shares-plugin
 Version:	0.2.0
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/thunar-plugins/%{name}
-Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:		thunar-shares-plugin-0.2.0-rosa-thunarx-2.patch
 BuildRequires:	pkgconfig(thunarx-2)
 BuildRequires:	pkgconfig(thunar-vfs-1)
@@ -24,6 +24,8 @@ A Thunar file manager extension to share files using Samba.
 %patch0 -p1
 
 %build
+sed -i -e 's/AM_CONFIG_HEADER/AM_CONFIG_HEADERS/' configure.in
+
 # required for patch0
 xdt-autogen
 
