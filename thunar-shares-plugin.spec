@@ -24,7 +24,7 @@ A Thunar file manager extension to share files using Samba.
 %patch0 -p1
 
 %build
-sed -i -e 's/AM_CONFIG_HEADER/AM_CONFIG_HEADERS/' configure.in
+sed -i -e 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/' configure.in
 
 # required for patch0
 xdt-autogen
