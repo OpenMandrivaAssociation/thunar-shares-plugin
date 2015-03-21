@@ -1,7 +1,7 @@
 Summary:	Samba support for Thunar filemanager
 Name:		thunar-shares-plugin
 Version:	0.2.0
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/thunar-plugins/%{name}
