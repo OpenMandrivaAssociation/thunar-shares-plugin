@@ -9,7 +9,6 @@ Group:		Graphical desktop/Xfce
 Url:		http://goodies.xfce.org/projects/thunar-plugins/%{name}
 Source0:	http://archive.xfce.org/src/thunar-plugins/thunar-shares-plugin/0.3/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(thunarx-3)
-#BuildRequires:	pkgconfig(thunar-vfs-1)
 BuildRequires:	intltool
 
 Requires:	samba-common
