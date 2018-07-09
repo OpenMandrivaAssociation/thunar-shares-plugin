@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   thunar-shares-plugin-0.2.0.tar.gz: c890d970c57ee5da422022f354873f167be30a20
+sources:
+  thunar-shares-plugin-0.3.0.tar.bz2: 0f68bdfad6f2f4729891fbead594ed6712987de0
