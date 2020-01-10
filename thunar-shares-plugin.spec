@@ -18,7 +18,7 @@ A Thunar file manager extension to share files using Samba.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure2_5x \
